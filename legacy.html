@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rizal Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/legacy.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="title">
+        <img src="images/logo.png">
+        <h3>The Rizal Archive</h3>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <!-- <li><a href="analysis.html">Analysis</a></li> -->
+        <li class="dropdown-menu">
+            <a href="">Life</a>
+            <ul class="dropdown-content">
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="relationships.html">Relationships</a></li>
+            </ul>
+        </li>
+        <li><a href="legacy.html" class="active">Legacy</a></li>
+    </ul>
+</header>
+<body>
+    <div class="legacy">
+    <h1>Legacy of José Rizal</h1>
+
+    <div class="legacy-grid">
+
+        <div class="legacy-card" onclick="openLegacy('identity')" role="button" tabindex="0">
+            <h3>National Identity</h3>
+            <p>Embodies Filipino pride, unity, and the pursuit of freedom</p>
+        </div>
+
+        <div class="legacy-card" onclick="openLegacy('education')" role="button" tabindex="0">
+            <h3>Education</h3>
+            <p>Advocated learning, critical thinking, and social awareness</p>
+        </div>
+
+        <div class="legacy-card" onclick="openLegacy('nationalism')" role="button" tabindex="0">
+            <h3>Nationalism</h3>
+            <p>Inspired movements for reform and independence</p>
+        </div>
+
+        <div class="legacy-card" onclick="openLegacy('literature')" role="button" tabindex="0">
+            <h3>Literature</h3>
+            <p>Shaped Philippine literature through Noli Me Tangere and El Filibusterismo</p>
+        </div>
+
+        <div class="legacy-card" onclick="openLegacy('martyrdom')" role="button" tabindex="0">
+            <h3>Martyrdom</h3>
+            <p>Symbol of courage, sacrifice, and the struggle for justice</p>
+        </div>
+
+        <div class="legacy-card" onclick="openLegacy('modern')" role="button" tabindex="0">
+            <h3>Modern Influence</h3>
+            <p>Endures in Rizal Day, monuments, education, and Filipino values today</p>
+        </div>
+
+    </div>
+</div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="js/legacy.js"></script>
+</div>
+</body>
+</html>

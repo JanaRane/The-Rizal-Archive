@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rizal Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/person.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="title">
+        <img src="images/logo.png">
+        <h3>The Rizal Archive</h3>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html">Works</a></li>
+        <!-- <li><a href="analysis.html">Analysis</a></li> -->
+        <li class="dropdown-menu">
+            <a href="">Life</a>
+            <ul class="dropdown-content">
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="relationships.html" class="active">Relationships</a></li>
+            </ul>
+        </li>
+        <li><a href="legacy.html">Legacy</a></li>
+    </ul>
+</header>
+<body>
+    <h1>Relationships</h1>
+    <p>Here are the lovers of Jose Rizal. Click each picture to learn more.</p>
+    <div class="people-display">
+        <div class="person-card" onclick="openModal('katigbak')">
+            <img src="images/lovers/Segunda Katigbak.png">
+            <p>Segunda Katigbak</p>
+        </div>
+        <div class="person-card" onclick="openModal('valenzuela')">
+            <img src="images/lovers/Leonor Valenzuela.png">
+            <p>Leonor Valenzuela</p>
+        </div>
+        <div class="person-card" onclick="openModal('rivera')">
+            <img src="images/lovers/Leonor Rivera.png">
+            <p>Leonor Rivera</p>
+        </div>
+        <div class="person-card" onclick="openModal('rey')">
+            <img src="images/lovers/Consuelo Ortega Y Rey.png">
+            <p>Consuelo Ortega Y Rey</p>
+        </div>
+        <div class="person-card" onclick="openModal('usui')">
+            <img src="images/lovers/Seiko Usui.png">
+            <p>Seiko Usui</p>
+        </div>
+        <div class="person-card" onclick="openModal('beckett')">
+            <img src="images/lovers/Gertrude Beckett.png">
+            <p>Gertrude Beckett</p>
+        </div>
+        <div class="person-card" onclick="openModal('jacoby')">
+            <img src="images/lovers/Suzanne Jacoby.png">
+            <p>Suzanne Jacoby</p>
+        </div>
+        <div class="person-card" onclick="openModal('boustead')">
+            <img src="images/lovers/Nellie Boustead.png">
+            <p>Nellie Boustead</p>
+        </div>
+        <div class="person-card" onclick="openModal('bracken')">
+            <img src="images/lovers/Josephine Bracken.png">
+            <p>Josephine Bracken</p>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <script src="js/person.js"></script>
+</body>
+</html>
