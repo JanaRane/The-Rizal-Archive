@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rizal Archive</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/works.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <div class="title">
+        <img src="images/logo.png">
+        <h3>The Rizal Archive</h3>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="works.html" class="active">Works</a></li>
+        <!-- <li><a href="analysis.html">Analysis</a></li> -->
+        <li class="dropdown-menu">
+            <a href="">Life</a>
+            <ul class="dropdown-content">
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="relationships.html">Relationships</a></li>
+            </ul>
+        </li>
+        <li><a href="legacy.html">Legacy</a></li>
+    </ul>
+</header>
+<body>
+    <div class="accordion">
+    <h1>Works</h1>
+    <div class="searchBar">
+        <input type="text" id="searchBar" placeholder="Search works..." onkeyup="searchWorks()">
+    </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">Noli Me Tangere</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('noli-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('noli-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.gutenberg.org/cache/epub/20228/pg20228-images.html">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">El Filibusterismo</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('elfili-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('elfili-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.scribd.com/document/487512833/Copy-of-EL-FILIBUSTERISMO-pdf">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">El Amor Patrio (Love of Country)</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('amor-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('amor-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.scribd.com/document/403734515/Love-of-Country-El-Amor-Patrio-English">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">Filipinas dentro de cien años (The Philippines a Century Hence)</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('filipinas-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('filipinas-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.gutenberg.org/files/35899/35899-h/35899-h.htm">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">Sobre la indolencia de los filipinos (The Indolence of the Filipinos)</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('indolence-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('indolence-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.gutenberg.org/cache/epub/6885/pg6885-images.html">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">Liham sa mga Kababaihan ng Taga-Malolos (To the Young Women of Malolos)</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('women-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('women-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://bangkanixiao.wordpress.com/wp-content/uploads/2012/10/rizal-liham-sa-kababaihan-ng-malolos.pdf">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">La visión del fray Rodríguez</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('vision-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('vision-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.scribd.com/document/78847734/The-Vision-of-Friar-Rodriguez">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">Mi último adiós</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('adios-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('adios-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://bangkanixiao.wordpress.com/wp-content/uploads/2012/10/rizal-poems-2-mi-ultimo-adios.pdf">Read Here</a>
+            </div>
+        </div>
+        <div class="accordion-item work">
+            <button class="accordion-header">A la juventud filipina (To the Philippine Youth)</button>
+            <div class="accordion-content">
+                <div class="work-card" onclick="openModal('youth-description')">
+                    <p>Description</p>
+                </div>
+                <!-- <div class="work-card" onclick="openModal('youth-analysis')">
+                    <p>Analysis</p>
+                </div> -->
+                    <a href="https://www.scribd.com/document/429496182/A-La-Juventud-Filipina-Rizal">Read Here</a>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+    <div id="noResults" style="display: none;"><p><i>No results found...</i></p></div>
+    <script src="js/works.js"></script>
+</body>
+</html>
